@@ -137,8 +137,6 @@ MorseCodeDecoding = {'.-': 'A',
 
 def encode_to_morse(text):
     # функция кодирования входного текста в Азбуку Морзе
-    global MorseCode  # объявление глобальной переменной - словаря,
-    # где ключ - буква, а значение эта буква в Азбуке Морзе
     text = text.upper().split()  # разбиение текста в список слов
     output = ''
     for i in text:
@@ -153,8 +151,6 @@ def encode_to_morse(text):
 
 def decode_from_morse(code):
     # функция декодирования входного текста на латиницу
-    global MorseCodeDecoding  # объявление глобальной переменной - словаря,
-    # где ключ - код Морзе, а значение буква, соответствующая этому коду
     text = code.split()  # разбиение кода в список
     output = ''
     for i in text:
@@ -168,8 +164,6 @@ def decode_from_morse(code):
 
 def encode_kir_to_morse(text):
     # функция кодирования входного текста в Азбуку Морзе
-    global KirCoding  # объявление глобальной переменной - словаря,
-    # где ключ - буква, а значение эта буква в Азбуке Морзе
     text = text.upper().split()  # разбиение текста в список слов
     output = ''
     for i in text:
@@ -184,8 +178,6 @@ def encode_kir_to_morse(text):
 
 def decode_kir_from_morse(code):
     # функция декодирования входного текста на кириллицу
-    global KirDecoding  # объявление глобальной переменной - словаря,
-    # где ключ - код Морзе, а значение буква, соответствующая этому коду
     text = code.split()  # разбиение кода в список
     output = ''
     for i in text:
